@@ -34,12 +34,12 @@ public class utot extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtave1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        txtave2 = new javax.swing.JTextField();
+        txtave3 = new javax.swing.JTextField();
+        txtave4 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,40 +51,37 @@ public class utot extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
-        getContentPane().add(txt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 130, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, -1, -1));
+        getContentPane().add(txt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 160, -1));
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("1st");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, -1, -1));
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("2nd");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, -1, -1));
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("3rd");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, -1, -1));
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("4th");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, -1, -1));
-
-        jTextField1.setText("jTextField1");
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 140, -1));
+        getContentPane().add(txtave1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 140, -1));
 
         jTextField2.setText("jTextField1");
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 140, -1));
 
         jTextField3.setText("jTextField1");
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 140, -1));
+        getContentPane().add(txtave2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 140, -1));
+        getContentPane().add(txtave3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 140, -1));
+        getContentPane().add(txtave4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 140, -1));
 
-        jTextField4.setText("jTextField4");
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 140, -1));
-
-        jTextField5.setText("jTextField5");
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 140, -1));
-
-        jTextField6.setText("jTextField6");
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 140, -1));
-
-        jButton2.setText("jButton2");
+        jButton2.setText("verify");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, -1, -1));
 
         pack();
@@ -105,6 +102,19 @@ public class utot extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Invalid", "ACT2A", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        int a = Integer.parseInt(txtave1.getText());
+        int b = Integer.parseInt(txtave2.getText());
+        int c = Integer.parseInt(txtave3.getText());
+        int d = Integer.parseInt(txtave4.getText());
+        
+        int tot = a + b + c + d;
+        int ave = tot / a + b + c + d;
+        
+        JOptionPane.showMessageDialog(null, "THE AVERAGE", "CALCULATION", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,12 +158,12 @@ public class utot extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField txt1;
+    private javax.swing.JTextField txtave1;
+    private javax.swing.JTextField txtave2;
+    private javax.swing.JTextField txtave3;
+    private javax.swing.JTextField txtave4;
     // End of variables declaration//GEN-END:variables
 }

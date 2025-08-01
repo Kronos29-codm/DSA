@@ -17,4 +17,5 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.mycompany.marviemiranda1.Marviemiranda1</exec.mainClass>
     </properties>
+    <name>wlester</name>
 </project>
