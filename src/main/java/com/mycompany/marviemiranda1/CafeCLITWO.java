@@ -2,18 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
-package com.mycompany.rain;
+package com.mycompany.marviemiranda1;
 import java.util.Scanner;
 /**
  *
- * @author CL2~PC37
+ * @author CL2~PC03
  */
-public class CafeCLI {
+public class CafeCLITWO {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        // TODO code application logic here
         Scanner in = new Scanner(System.in);
         int hotdot = 25;
         int siopai = 10;
@@ -190,3 +191,4 @@ public class CafeCLI {
         }
     }
 }
+
